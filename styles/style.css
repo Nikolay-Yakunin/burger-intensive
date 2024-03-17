@@ -22,7 +22,7 @@ body {
 }
 
 .background {
-  background-image: url(/images/promo_bg.png);
+  background-image: url(/images/main_bg.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
