@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(/fonts/Gilroy-Semibold.ttf);
+  src: url(../fonts/Gilroy-Semibold.ttf);
 }
 
 @font-face {
   font-family: 'Merriwather';
-  src: url(/fonts/Merriweather-Black.ttf);
+  src: url(../fonts/Merriweather-Black.ttf);
 }
 
 body {
