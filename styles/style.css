@@ -25,7 +25,7 @@ body {
   background-image: url(/images/main_bg.png);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: initial;
   overflow: hidden;
   z-index: -2;
 }
@@ -37,8 +37,6 @@ body {
 
 .button {
   cursor: pointer;
-  width: 260px;
-  height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,12 +103,9 @@ body {
   user-select: none;
 }
 
-.main-content {
-  padding: 103px 0 199px 0;
-}
-
 .promo {
   position: relative;
+  padding: 103px 0 199px 0;
 }
 
 .promo-info {
@@ -147,8 +142,161 @@ body {
   margin-bottom: 40px;
 }
 
+.promo-info_btn {
+  width: 260px;
+  height: 62px;
+}
+
 .promo-image img {
   position: absolute;
-  top: -160px;
+  top: -40px;
   right: calc(100% - 1500px);
+}
+
+.why {
+  padding: 100px 0;
+  background-image: url(/images/whybg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  padding-bottom: 180px;
+}
+
+.why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-title {
+  font-family: 'Merriwather', serif;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 312px);
+  gap: 100px;
+}
+
+.why-card {
+  max-width: 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.why-card img {
+  margin-bottom: 40px;
+}
+
+.why-card-title {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.why-card-description {
+  font-family: inherit;
+  line-height: 29px;
+  font-size: 16px;
+}
+
+.product {
+  padding: 100px 0;
+  background-image: url(/images/burgers_bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  padding-bottom: 180px;
+}
+
+.product .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-title {
+  font-family: 'Merriwather', serif;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #211a16;
+  padding: 32px 32px 20px 32px;
+  border: 1px solid #353535;
+  border-radius: 16px;
+}
+
+.product-card img {
+  margin-bottom: 40px;
+}
+
+.product-card-title {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.product-card-description {
+  font-family: inherit;
+  line-height: 29px;
+  font-size: 16px;
+}
+
+.product-card-extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-info .price {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.product-card-info .weight {
+  font-family: inherit;
+  line-height: 29px;
+  font-size: 16px;
+  color: #757575;
+}
+
+.product-card-btn {
+  gap: 5px;
+  width: 182px;
+  height: 62px;
+  align-items: center;
 }
