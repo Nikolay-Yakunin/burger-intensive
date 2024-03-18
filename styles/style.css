@@ -355,6 +355,7 @@ body {
   border-radius: 8px;
   padding: 16px 10px;
   color: #757575;
+  font-size: 16px;
   border: none;
   outline: none;
 }
@@ -367,4 +368,16 @@ body {
 .order__form-button {
   width: 344px;
   height: 62px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 20px;
 }
