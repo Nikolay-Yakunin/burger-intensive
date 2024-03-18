@@ -276,7 +276,6 @@ body {
 }
 
 .product-card-info .weight {
-  font-family: inherit;
   line-height: 29px;
   font-size: 16px;
   color: #757575;
@@ -296,4 +295,76 @@ body {
 
 .product-card-btn span:last-child {
   margin-top: 5px;
+}
+
+.order {
+  background-image: url(/images/order_bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+
+.order .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__image {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 764px);
+  z-index: -1;
+}
+
+.order__form {
+  display: flex;
+  flex-direction: column;
+  width: 424px;
+  padding: 60px 40px;
+  background-color: #211a16;
+  border: 1px solid #353535;
+  border-radius: 16px;
+  box-sizing: border-box;
+  margin-left: 565px;
+}
+.order__form-label {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.order__form-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 344px;
+  height: 62px;
+  background: linear-gradient(90.13deg, #da8023 0%, #e2b438 100%);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.order__form-input {
+  width: 342px;
+  height: 60px;
+  background: #211a16;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px 10px;
+  color: #757575;
+  border: none;
+  outline: none;
+}
+
+.order__form-input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.order__form-button {
+  width: 344px;
+  height: 62px;
 }
