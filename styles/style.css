@@ -53,6 +53,15 @@ body {
   background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
 }
 
+.common-title {
+  font-family: 'Merriwather', serif;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
 .header {
   padding: 40px 0;
 }
@@ -159,22 +168,13 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: initial;
-  padding-bottom: 180px;
+  padding-bottom: 140px;
 }
 
 .why .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.why-title {
-  font-family: 'Merriwather', serif;
-  font-size: 64px;
-  line-height: 80px;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  margin-bottom: 80px;
 }
 
 .why-cards {
@@ -213,7 +213,7 @@ body {
 .product {
   padding: 100px 0;
   background-image: url(/images/burgers_bg.png);
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: initial;
   padding-bottom: 180px;
@@ -225,47 +225,38 @@ body {
   align-items: center;
 }
 
-.product-title {
-  font-family: 'Merriwather', serif;
-  font-size: 64px;
-  line-height: 80px;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  margin-bottom: 80px;
-}
-
 .product-cards {
   display: grid;
   grid-template-columns: repeat(3, 384px);
-  gap: 20px;
+  gap: 24px;
+  margin-top: 60px;
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
   background-color: #211a16;
-  padding: 32px 32px 20px 32px;
+  padding: 30px;
   border: 1px solid #353535;
   border-radius: 16px;
 }
 
 .product-card img {
-  margin-bottom: 40px;
+  height: 250px;
+  max-width: 100%;
 }
 
 .product-card-title {
   font-family: 'Gilroy', sans-serif;
   font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  line-height: 29px;
+  margin: 24px 0;
 }
 
 .product-card-description {
-  font-family: inherit;
-  line-height: 29px;
+  line-height: 140%;
   font-size: 16px;
+  margin-bottom: 24px;
 }
 
 .product-card-extra {
@@ -279,12 +270,9 @@ body {
 }
 
 .product-card-info .price {
-  font-family: 'Gilroy', sans-serif;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  margin-right: 16px;
+  margin-bottom: 8px;
 }
 
 .product-card-info .weight {
@@ -295,8 +283,17 @@ body {
 }
 
 .product-card-btn {
-  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 182px;
   height: 62px;
-  align-items: center;
+}
+
+.product-card-btn span:first-child {
+  margin-right: 10px;
+}
+
+.product-card-btn span:last-child {
+  margin-top: 5px;
 }
