@@ -50,35 +50,32 @@ document.getElementById('order-btn').onclick = function (event) {
   }
 };
 
-/* Currency switcher. */
+//* Currency switcher. */
 
 const currency = document.getElementById('currency');
 const prices = document.getElementsByClassName('price');
-const usdToRubExchangeRate = 91.5;
-const bynToRubExchangeRate = 29;
 
 currency.onclick = function (e) {
   const currentCurrency = e.target.innerText;
 
-  const isUSD = currentCurrency === '$';
-  const isBYN = currentCurrency === 'BYN';
-  const newCurrency = isUSD ? '₽' : isBYN ? '$' : 'BYN';
+  let newCurrency = '$';
+  let coefficient = 1;
+
+  if (currentCurrency === '$') {
+    newCurrency = '₽';
+    coefficient = 95.5;
+  } else if (currentCurrency === '₽') {
+    newCurrency = '€';
+    coefficient = 0.85;
+  } else if (currentCurrency === '€') {
+    newCurrency = 'BYN';
+    coefficient = 3;
+  }
 
   e.target.innerText = newCurrency;
 
-  Array.from(prices).forEach((priceEl) => {
-    let number = parseFloat(priceEl.innerText.replace('$', '').replace('₽', '').replace('BYN', ''));
-
-    if (isUSD) {
-      number = (number * usdToRubExchangeRate).toFixed(0);
-      priceEl.innerText = `${number} ₽`;
-    } else if (isBYN) {
-      number = ((number * bynToRubExchangeRate) / usdToRubExchangeRate).toFixed(0);
-      priceEl.innerText = `${number} $`;
-    } else {
-      number = (number / bynToRubExchangeRate).toFixed(0);
-      priceEl.innerText = `${number} BYN`;
-      s;
-    }
-  });
+  for (const price of prices) {
+    price.innerText =
+      (price.getAttribute('data-base-price') * coefficient).toFixed(0) + ' ' + newCurrency;
+  }
 };
