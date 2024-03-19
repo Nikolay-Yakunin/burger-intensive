@@ -90,6 +90,7 @@ body {
 }
 
 .menu-item a {
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
 }
@@ -146,7 +147,7 @@ body {
 
 .promo-description {
   font-family: inherit;
-  line-height: 24px;
+  line-height: 29px;
   font-size: 24px;
   margin-bottom: 40px;
 }
@@ -163,7 +164,6 @@ body {
 }
 
 .why {
-  padding: 100px 0;
   background-image: url(../images/whybg.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -206,12 +206,11 @@ body {
 
 .why-card-description {
   font-family: inherit;
-  line-height: 29px;
+  line-height: 24px;
   font-size: 16px;
 }
 
 .product {
-  padding: 100px 0;
   padding-bottom: 180px;
 }
 
