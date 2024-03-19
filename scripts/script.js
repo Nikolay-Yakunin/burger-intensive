@@ -70,6 +70,9 @@ currency.onclick = function (e) {
   } else if (currentCurrency === '€') {
     newCurrency = 'BYN';
     coefficient = 3;
+  } else if (currentCurrency === 'BYN') {
+    newCurrency = '¥';
+    coefficient = 6.9;
   }
 
   e.target.innerText = newCurrency;
