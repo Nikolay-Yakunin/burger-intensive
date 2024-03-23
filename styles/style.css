@@ -235,6 +235,7 @@ body {
 .product-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #211a16;
   padding: 30px;
   border: 1px solid #353535;
@@ -248,8 +249,8 @@ body {
 
 .product-card-title {
   font-family: 'Gilroy', sans-serif;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 30px;
+  line-height: 35x;
   margin: 24px 0;
 }
 
@@ -324,8 +325,7 @@ body {
   flex-direction: column;
   width: 424px;
   padding: 60px 40px;
-  background-color: #211a16;
-  border: 1px solid #353535;
+  background-color: transparent;
   border-radius: 16px;
   box-sizing: border-box;
   margin-left: 565px;
